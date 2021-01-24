@@ -1,0 +1,15 @@
+<h1>Liste des étudiants</h1>
+
+<!--Balises normales-->
+<article *ngFor="let etudiant of servEtu.listeEtudiants; let i=index">
+    <h3>({{i}}) {{etudiant.nom}} {{etudiant.prenom}}</h3>
+    <p><em>Promotion: {{etudiant.promo}}</em></p>
+    <p> Mail : {{etudiant.mail}} </p>
+    <p> Spécialités: {{etudiant.specialites}}</p>
+    <a class="photoProfil" href routerLink="/profiletudiant/{{i}}">
+        <img [src]="etudiant.photo" />
+    </a>
+    <a class="btn" routerLink="/modifetudiant/{{i}}"> Modifier</a>
+</article>
+
+<router-outlet></router-outlet>

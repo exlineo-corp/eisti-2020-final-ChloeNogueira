@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'monProjet';
+  title: string= '';
 }
+//Socle de l'application ne bouge pas

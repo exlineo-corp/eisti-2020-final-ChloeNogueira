@@ -1,0 +1,15 @@
+ul {
+    list-style-type: circle;
+}
+
+li{
+    display: inline;
+    margin-right: 20px;
+}
+
+footer{
+    
+    position: fixed;
+    bottom: 0;
+}
+

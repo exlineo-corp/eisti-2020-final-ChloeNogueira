@@ -1,0 +1,14 @@
+<p  *ngIf="indexEtudiant >= 0">Vous pouvez modifier l'étudiant {{indexEtudiant}}, {{servEtu.listeEtudiants[indexEtudiant].nom}} {{servEtu.listeEtudiants[indexEtudiant].prenom}} ici !</p>
+
+<section>
+    <form (ngSubmit)="onSubmit()">
+ 
+        <input name="nom" [(ngModel)]="modifformulaire.nom"  placeholder="Nom" type="text" required>
+        <input name="prenom" [(ngModel)]="modifformulaire.prenom"  placeholder="Prénom" type="text" required>
+        <input name="mail" [(ngModel)]="modifformulaire.mail"  placeholder="Email" type="email" required>
+        <input name="promo" [(ngModel)]="modifformulaire.promo"  placeholder="Promotion" type="text" required>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Annuler">
+
+    </form>
+</section>
