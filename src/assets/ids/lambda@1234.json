@@ -1,0 +1,9 @@
+{ 
+    "nom":"Lambda",
+    "prenom":"Omage",
+    "promo":"ING3",
+    "photo":"lambda.jpg",
+    "mail":"lambda@omage.com",
+    "statut":1
+    
+}

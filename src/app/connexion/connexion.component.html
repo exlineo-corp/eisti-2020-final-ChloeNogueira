@@ -1,0 +1,11 @@
+<h3>Connexion !</h3>
+<form #f="ngForm" (ngSubmit)="gogo()">
+    <input name="id" [(ngModel)]="util.id" #ctlId="ngModel" placeholder="Saisissez votre identifiant" type="text" minlength="4">
+    <span *ngIf="ctlId.invalid">Identifiant invalide</span>
+
+    <input name="mdp" [(ngModel)]="util.mdp" #ctlMdp="ngModel" placeholder="Saisissez votre mot de passe" type="password" minlength="4">
+    <span *ngIf="ctlMdp.invalid">Mot de passe invalide</span>
+
+    <input type="submit" value="Envoyer" [disabled]="f.invalid">
+    <input type="reset" value="Annuler">
+</form>

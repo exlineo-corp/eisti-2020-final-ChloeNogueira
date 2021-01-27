@@ -12,6 +12,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ProfiletudiantComponent } from './profiletudiant/profiletudiant.component';
 import {FormsModule} from '@angular/forms';
 import { ModifetudiantComponent } from './modifetudiant/modifetudiant.component';
+import { ConnexionComponent } from './connexion/connexion.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,9 @@ import { ModifetudiantComponent } from './modifetudiant/modifetudiant.component'
     Erreur404Component,
     ContactComponent,
     ProfiletudiantComponent,
-    ModifetudiantComponent
+    ModifetudiantComponent,
+    ConnexionComponent,
+  
   ],
   imports: [
     BrowserModule,
