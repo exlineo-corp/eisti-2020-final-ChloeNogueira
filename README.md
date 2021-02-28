@@ -3,7 +3,7 @@ eisti-2020-final-ChloeNogueira created by GitHub Classroom
 
 Mon code est sur la branche master. 
 
-J'ai crée deux "utilisateurs": 
+J'ai crée deux "utilisateurs", leurs fichiers sont dans assets/data: 
   le premier a accès à l'onglet "Accéder à des bonus". Ses logins et mdp sont: 
   login: lambda
   mdp: 1234
