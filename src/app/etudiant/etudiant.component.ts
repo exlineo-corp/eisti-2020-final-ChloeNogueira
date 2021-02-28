@@ -12,6 +12,7 @@ export class EtudiantComponent implements OnInit {
   constructor(public servEtu:EtudiantsService) {}
 
   ngOnInit(): void {
+    //this.servEtu.getEtudiants(); //Récupère les étudiants lorsqu'on arrive sur la page des étudiants
   }
 
 }

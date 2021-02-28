@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AccueilComponent } from './accueil/accueil.component';
-import { ContactComponent } from './contact/contact.component';
+import { ContactComponent } from "./contact/ContactComponent";
 import { Erreur404Component } from './erreur404/erreur404.component';
 import { EtudiantComponent } from './etudiant/etudiant.component';
 import { ProfiletudiantComponent } from './profiletudiant/profiletudiant.component';

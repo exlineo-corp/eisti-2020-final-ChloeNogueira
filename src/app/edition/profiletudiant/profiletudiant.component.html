@@ -1,14 +1,9 @@
-<h1>Editer un étudiant</h1>
-<form >
-    <input name="nom" [(ngModel)]="profiletudiant.nom"  placeholder="Nom" type="text" #ctlNom="ngModel" required minlength="4"> 
-    <span *ngIf="ctlNom.invalid">Merci de saisir un nom de au moins 4 caractères</span>
-    <span *ngIf="ctlNom.valid">Nom correct</span>
-    <input name="prenom" [(ngModel)]="profiletudiant.prenom"  placeholder="Prénom" type="text" required>
-    <input name="mail" [(ngModel)]="profiletudiant.mail"  placeholder="Email" type="email" required>
-    <input name="promo" [(ngModel)]="profiletudiant.promo"  placeholder="Promotion" type="text" required>
-    
-</form>
+<h1>Voici l'administrateur</h1>
 
-<button (click)="majEtudiant()" >Mettre à jour</button>
-<button (click)="annulerMaj()" >Annuler</button>
-
+<h3>Otto de la plaine de Nay</h3>
+<p><em>Né en 2018</em></p>
+<p>Vous pouvez le contacter par mail à l'adresse suivante: toto@gmail.com </p>
+<p> Spécialiste angular</p>
+<a>
+    <img src="http://3.bp.blogspot.com/_13I4I4Vy6-U/TRByVd7TlII/AAAAAAAAALg/jKpbRDkXpCc/s1600/Funny%2BChihuahua%2BPics.png" />
+</a>

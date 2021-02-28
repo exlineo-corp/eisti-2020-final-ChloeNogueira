@@ -19,7 +19,17 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+
+li a:hover{
     background-color: #111;
 }
 
+span{
+    font-size: 80%;
+    display:none;
+    color: white;
+}
+
+li a:hover + span{
+    display:block;
+}

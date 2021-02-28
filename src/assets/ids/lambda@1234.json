@@ -1,9 +1,9 @@
 { 
     "nom":"Lambda",
-    "prenom":"Omage",
+    "prenom":"Omega",
     "promo":"ING3",
     "photo":"lambda.jpg",
-    "mail":"lambda@omage.com",
-    "statut":1
-    
+    "mail":"lambda@omega.com",
+    "statut":1,
+    "token": "JeSuisLeTokenDeSecurisationAvecDesDatasDedans"
 }

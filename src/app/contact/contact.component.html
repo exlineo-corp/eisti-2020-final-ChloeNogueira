@@ -1,13 +1,12 @@
 <p>Pour nous contacter c'est ici, laissez nous un message !</p>
 <section>
-    <form>
- 
+    <form (ngSubmit)="onSubmit()">
         <input name="nom" [(ngModel)]="contact.nom" (input)="suiviInput()" placeholder="Nom" type="text" required>
-        <input name="email" [(ngModel)]="contact.email" (input)="suiviInput()" placeholder="Email" type="email" required>
+        <input name="email" [(ngModel)]="contact.email" (input)="suiviInput()" placeholder="Email" type="email" #ctlMail="ngModel" required minlength="10">
+        <span *ngif="ctlMail.invalid"> Merci de saisir un email valide</span>
         <input name="sujet" [(ngModel)]="contact.sujet" (input)="suiviInput()" placeholder="Sujet de votre message" type="text" required>
-        <textarea name="message" [(ngModel)]="contact.message" (input)="suiviInput()" placeholder="Votre message ici, merci" type="text" required></textarea>
+        <textarea name="message" [(ngModel)]="contact.message" (input)="suiviInput()" placeholder="Votre message ici, merci"  type="text" required ></textarea>
         <input type="submit" value="Envoyer">
         <input type="reset" value="Annuler">
-
     </form>
 </section>

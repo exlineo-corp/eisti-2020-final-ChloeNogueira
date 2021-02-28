@@ -1,4 +1,5 @@
-<h3>Connexion !</h3>
+<h3>La connexion vous permettra d'accéder aux bonus si vous avez les droits !</h3>
+<!--h2 *ngIf="connectServ.statut == 1 ">Vous êtes connecté !</h2-->
 <form #f="ngForm" (ngSubmit)="gogo()">
     <input name="id" [(ngModel)]="util.id" #ctlId="ngModel" placeholder="Saisissez votre identifiant" type="text" minlength="4">
     <span *ngIf="ctlId.invalid">Identifiant invalide</span>

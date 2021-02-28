@@ -5,8 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class ConnecteService {
 
-  statut:number = 0; //Statut de la personne connectée
-  connexion:boolean = false; // La personne est-elle connectée ?
-
+  statut:number //Statut de la personne connectée
+  connexion:boolean  // La personne est-elle connectée ?
+  token: string;
   constructor() { }
 }

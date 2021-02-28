@@ -17,7 +17,10 @@ export class AuthService {
       data => {
         console.log(data);
         this.connectServ.connexion = true;
+        // Sauvegarde du statut de la personne connectée
         if(data['statut']) this.connectServ.statut = data['statut'];
+        // Token ajouté à l'intercepteur
+        if(data['token']) this.connectServ.token = data['token'];
         this.profil = data;
       },
       erreur => {

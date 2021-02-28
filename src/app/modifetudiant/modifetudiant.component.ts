@@ -46,7 +46,6 @@ export class ModifetudiantComponent implements OnInit {
     this.servEtu.listeEtudiants[this.indexEtudiant].prenom = this.modifformulaire.prenom;
     this.servEtu.listeEtudiants[this.indexEtudiant].promo = this.modifformulaire.promo;
     this.servEtu.listeEtudiants[this.indexEtudiant].mail = this.modifformulaire.mail;
-
   }
 
 }

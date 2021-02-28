@@ -14,7 +14,7 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
     this.contact = {
       nom:'',
-      email:'nogueirach@eisti.eu',
+      email:'',
       sujet:'',
       message:'',
 
@@ -25,4 +25,12 @@ export class ContactComponent implements OnInit {
     console.log(this.contact)
   }
 
+  /**
+   * méthode appelée par le formulaire
+   * @param f Les résultats du formulaire
+   */
+  soumettreFormulaire(f: { value: any; }){
+    console.log('Données envoyées',f);
+    console.log('Comparaison des données', f.value, this.contact)
+  }
 }

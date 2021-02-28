@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../services/auth.service';
+import { ConnecteService } from '../services/connecte.service';
 
 @Component({
   selector: 'app-connexion',

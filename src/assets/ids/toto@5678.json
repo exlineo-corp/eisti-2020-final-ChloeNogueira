@@ -1,0 +1,9 @@
+{ 
+    "nom":"L'abricot",
+    "prenom":"Toto",
+    "promo":"ING3",
+    "photo":"toto.jpg",
+    "mail":"toto@abricot.com",
+    "statut":0,
+    "token": "JeSuisLeTokenDeSecurisationAvecDesDatasDedans"
+}
